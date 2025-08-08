@@ -16,41 +16,43 @@
         }
     </style>
 </head>
-<body class="bg-sky-100 flex items-center justify-center min-h-screen p-4">
+<body class="bg-gradient-to-br from-blue-200 via-sky-200 to-cyan-200 flex items-center justify-center min-h-screen p-4">
 
-    <!-- Основен контейнер, който прилича на страница от книжка -->
-    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 md:p-12 text-center transform transition-transform duration-300">
+    <!-- Основен контейнер, стилизиран като книжка -->
+    <div class="bg-white rounded-xl shadow-2xl max-w-lg w-full overflow-hidden">
         
-        <!-- Заглавие на книжката -->
-        <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">
-            Бобо-камиончето, което мечтаеше да лети
-        </h1>
-        <h2 class="text-2xl text-gray-600 mb-6">от Деди</h2>
-        
-        <!-- Място за илюстрация -->
-        <div class="w-full rounded-lg overflow-hidden my-8 shadow-lg">
-             <!-- Пътят до картинката е images/cover.png -->
-            <img src="images/cover.png" alt="Корица на книжката за Бобо-камиончето" class="w-full h-auto object-cover">
+        <!-- Илюстрация на корицата -->
+        <div class="w-full">
+            <!-- Кодът е коригиран, за да се вижда винаги цялата картинка -->
+            <img src="images/cover.png" alt="Корица на книжката за Бобо-камиончето" class="w-full h-auto">
         </div>
         
-        <!-- АКТУАЛИЗИРАН ТЕКСТ -->
-        <div class="text-gray-700 text-lg md:text-xl space-y-4 text-left">
-            <p>
-                В прашния хангар на едно забравено летище живееше малко <strong class="text-red-500">червено камионче на име Бобо</strong>. Но той не беше обикновено камионче. Той беше мечтател.
-            </p>
-            <p>
-                В моторното си сърце той носеше една-едничка, голяма мечта.
-            </p>
-            <p class="italic text-gray-500">
-                Коя е тя, ще разберете от следващите страници на нашата книжка...
-            </p>
-        </div>
+        <!-- Текстова част на корицата -->
+        <div class="p-6 md:p-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-2 text-center">
+                Бобо-камиончето, което мечтаеше да лети
+            </h1>
+            <h2 class="text-xl text-gray-600 mb-6 text-center">от Деди</h2>
+            
+            <!-- Уводен текст -->
+            <div class="text-gray-800 text-base md:text-lg space-y-3 text-left border-t border-gray-200 pt-6 mt-6">
+                <p>
+                    В прашния хангар на едно забравено летище живееше малко <strong class="text-red-500">червено камионче на име Бобо</strong>. Но той не беше обикновено камионче. Той беше мечтател.
+                </p>
+                <p>
+                    В моторното си сърце той носеше една-едничка, голяма мечта.
+                </p>
+                <p class="italic text-gray-500">
+                    Коя е тя, ще разберете от следващите страници на нашата книжка...
+                </p>
+            </div>
 
-        <!-- Навигация към следваща страница -->
-        <div class="mt-10">
-            <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                Начало на историята &rarr;
-            </button>
+            <!-- Навигация към следваща страница -->
+            <div class="mt-8 text-center">
+                <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    Начало на историята &rarr;
+                </button>
+            </div>
         </div>
 
     </div>
