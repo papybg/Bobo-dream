@@ -21,13 +21,14 @@
     <!-- 
         Основен контейнер:
         - По подразбиране (мобилно): Една колона.
-        - От средни екрани нагоре (десктоп): Става на два реда с md:flex.
+        - От средни екрани нагоре (десктоп): Става на два реда с md:flex и е по-широк с md:max-w-6xl.
     -->
-    <div class="bg-white rounded-xl shadow-2xl max-w-lg md:max-w-4xl w-full overflow-hidden md:flex">
+    <div class="bg-white rounded-xl shadow-2xl max-w-lg md:max-w-6xl w-full overflow-hidden md:flex">
         
         <!-- Лява част (Илюстрация) - заема половината ширина на десктоп -->
-        <div class="w-full md:w-1/2">
-            <img src="images/cover.png" alt="Корица на книжката за Бобо-камиончето" class="w-full h-full object-cover">
+        <div class="w-full md:w-1/2 bg-gray-100 flex items-center justify-center">
+             <!-- Променен е object-cover на object-contain, за да се вижда цялата картинка -->
+            <img src="images/cover.png" alt="Корица на книжката за Бобо-камиончето" class="w-full h-auto md:h-full object-contain">
         </div>
         
         <!-- Дясна част (Текст) - заема другата половина и центрира съдържанието вертикално -->
