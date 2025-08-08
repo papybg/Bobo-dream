@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бобо-камиончето, което мечтаеше да лети</title>
+    <!-- Включваме Tailwind CSS за лесно стилизиране -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Използваме приятен шрифт за по-добро усещане */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-sky-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Основен контейнер, който прилича на страница от книжка -->
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 md:p-12 text-center transform transition-transform duration-300">
+        
+        <!-- Заглавие на книжката -->
+        <h1 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">
+            Бобо-камиончето, което мечтаеше да лети
+        </h1>
+        <h2 class="text-2xl text-gray-600 mb-6">от Деди</h2>
+        
+        <!-- Място за илюстрация -->
+        <div class="w-full rounded-lg overflow-hidden my-8 shadow-lg">
+             <!-- Когато качите картинката в GitHub, тя ще се появи тук. Пътят трябва да е правилен! -->
+            <img src="images/cover.png" alt="Корица на книжката за Бобо-камиончето" class="w-full h-auto object-cover">
+        </div>
+        
+        <!-- Текст на историята -->
+        <div class="text-gray-700 text-lg md:text-xl space-y-4 text-left">
+            <p>
+                Някъде далеч, върху един слънчев, зелен хълм, живееше малко <strong class="text-red-500">червено камионче на име Бобо</strong>. То не беше като другите камиони. Вместо да превозва товари, то превозваше една голяма мечта.
+            </p>
+            <p>
+                Един ден, с много труд и ентусиазъм, то си построи чифт <strong class="text-yellow-800">дървени криле</strong>, които монтира здраво над каросерията си. Те приличаха на криле на парапланер и скърцаха леко при всеки полъх на вятъра.
+            </p>
+        </div>
+
+        <!-- Навигация към следваща страница -->
+        <div class="mt-10">
+            <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Начало на историята &rarr;
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
